@@ -17,12 +17,15 @@ because Kaffeine was broken at the time.
 ## Installation
 
 #### Deploy to Heroku
-This app uses [Heroku scheduler](https://devcenter.heroku.com/articles/scheduler). Note
-that this spins up a [one-off dyno](https://devcenter.heroku.com/articles/one-off-dynos)
-which is not free.
-
-
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/inoda/heroku-pinger/tree/master)
+
+This app uses [Heroku scheduler](https://devcenter.heroku.com/articles/scheduler).
+Unfortunately, the Heroku scheduler is [not currently configurable](https://github.com/heroku/cli/issues/668)
+via the 'Deploy to Heroku' button. So, once the app is deployed, you will need to do the following:
+1. Go to the app overview
+2. Click on 'Heroku Scheduler' and hit 'Create Job'
+3. Schedule a job every hour at :00. The job should run `bundle exec rake send_pings`
+4. Schedule a job every hour at :30. The job should run `bundle exec rake send_pings`
 
 #### Manual installation
 - Install Ruby `2.6.0`
