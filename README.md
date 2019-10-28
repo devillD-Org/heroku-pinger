@@ -11,7 +11,7 @@ allows you to set a window where pinging your application is paused (your
 app probably doesn't need to stay awake while you're sleeping).
 
 This app is inspired by [Kaffeine](http://kaffeine.herokuapp.com), and was built
-because Kaffeine was broken at the time.
+because Kaffeine was [broken](https://github.com/romainbutteaud/Kaffeine/issues/29) at the time.
 
 
 ## Installation
