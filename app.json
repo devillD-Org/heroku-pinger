@@ -3,6 +3,7 @@
   "description": "Keeping your free Heroku dynos awake",
   "repository": "https://github.com/inoda/heroku-pinger",
   "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "logo": "https://github.com/inoda/heroku-pinger/assets/img/sleepy-face.png",
   "keywords": ["heroku", "pinger", "free", "dyno"],
   "addons": [
     "scheduler"
