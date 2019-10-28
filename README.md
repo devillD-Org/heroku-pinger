@@ -28,7 +28,7 @@ via the 'Deploy to Heroku' button. So, once the app is deployed, you will need t
 4. Schedule a job every hour at :30. The job should run `bundle exec rake send_pings`
 
 #### Manual installation
-- Install Ruby `2.6.0`
+- Install Ruby `2.6.5`
 - Run `bundle install` to install gems
 - Set ENV vars:
   - `URLS_TO_PING`: A list of URLs to ping, delimited by '||'
