@@ -1,3 +1,3 @@
-task :greet do
+task :send_pings do
   Pinger.run
 end
