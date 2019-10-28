@@ -1,3 +1,3 @@
 task :greet do
-  EnvReader.sites.each { |s| Pinger.ping(s) }
+  Pinger.run
 end
