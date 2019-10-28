@@ -1,3 +1,3 @@
 task :greet do
-  puts Pinger.ping("https://www.google.com/")
+  EnvReader.sites.each { |s| Pinger.ping(s) }
 end
