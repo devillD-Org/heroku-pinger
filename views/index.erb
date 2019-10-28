@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Pinger</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="en">
+
+    <style media="screen">
+      * {
+        color: #c5c5c5;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        background: black;
+      }
+
+      body {
+        text-align: center;
+        padding-top: 100px;
+      }
+
+      ul {
+        padding-left: 0;
+        list-style: none;
+      }
+
+      h3 {
+        text-decoration: underline;
+        margin-top: 50px;
+      }
+
+      .paused {
+        color: #d09945;
+      }
+
+      .running {
+        color: #45d045;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Pinger</h1>
+
+    <h3>Status:</h3>
+    <% if @running %>
+      <div class="running">Running</div>
+    <% else %>
+      <div class="paused">Paused</div>
+    <% end %>
+
+    <h3>Sites being pinged:</h3>
+    <ul>
+      <% @sites.each do |s| %>
+        <%= s %>
+      <% end %>
+    </ul>
+  </body>
+</html>
