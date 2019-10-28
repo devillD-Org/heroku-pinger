@@ -14,7 +14,7 @@
     },
     "PAUSE_START_UTC_HOUR": {
       "description": "The hour of day when pinging stops (in UTC)",
-      "value": "7"
+      "value": "5"
     },
     "PAUSE_END_UTC_HOUR": {
       "description": "The hour of day when pinging starts (in UTC)",
