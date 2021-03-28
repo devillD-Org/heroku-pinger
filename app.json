@@ -12,7 +12,6 @@
       "url": "https://github.com/bundler/heroku-buildpack-bundler2"
     }
   ],
-  "stack": "container",
   "env": {
     "URLS_TO_PING": {
       "description": "A list of URLs to ping, delimited by '||'",
