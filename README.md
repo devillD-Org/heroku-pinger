@@ -17,7 +17,7 @@ because Kaffeine was [broken](https://github.com/romainbutteaud/Kaffeine/issues/
 ## Installation
 
 #### Deploy to Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/inoda/heroku-pinger/tree/master)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/devillD-Org/heroku-pinger/tree/master)
 
 This app uses [Heroku scheduler](https://devcenter.heroku.com/articles/scheduler).
 Unfortunately, the Heroku scheduler is [not currently configurable](https://github.com/heroku/cli/issues/668)
