@@ -11,6 +11,7 @@ WORKDIR /app
 
 COPY Gemfile ./Gemfile
 COPY Gemfile.lock ./Gemfile.lock
+RUN chmod +x start.sh
 
 COPY . .
 
