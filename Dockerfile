@@ -12,7 +12,6 @@ WORKDIR /app
 COPY Gemfile ./Gemfile
 COPY Gemfile.lock ./Gemfile.lock
 
-RUN bundle install -j 20
 COPY . .
 
 EXPOSE 3000
