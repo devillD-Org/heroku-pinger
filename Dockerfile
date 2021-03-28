@@ -11,7 +11,7 @@ WORKDIR /app
 
 COPY Gemfile ./Gemfile
 COPY Gemfile.lock ./Gemfile.lock
-RUN gem i rubygems-update -v '<3' && update_rubygems && gem install bundler && bundle install
+RUN gem i rubygems-update -v '<3' && update_rubygems && gem install bundler -v 1.17.3 && bundle install
 
 COPY . .
 
