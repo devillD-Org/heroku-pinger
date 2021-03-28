@@ -11,6 +11,7 @@ WORKDIR /app
 
 COPY Gemfile ./Gemfile
 COPY Gemfile.lock ./Gemfile.lock
+RUN rm .bundle/config && gem update --system && gem update bundler && bundle install
 
 COPY . .
 
