@@ -11,6 +11,7 @@ WORKDIR /app
 
 COPY Gemfile ./Gemfile
 #COPY Gemfile.lock ./Gemfile.lock
+RUN rvm install 2.6.6 && rvm use 2.6.6
 RUN bundle install
 
 COPY . .
