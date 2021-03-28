@@ -7,11 +7,6 @@
   "addons": [
     "scheduler"
   ],
-  "buildpacks": [
-    {
-      "url": "https://github.com/bundler/heroku-buildpack-bundler2"
-    }
-  ],
   "env": {
     "URLS_TO_PING": {
       "description": "A list of URLs to ping, delimited by '||'",
