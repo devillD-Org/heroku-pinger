@@ -7,6 +7,7 @@
   "addons": [
     "scheduler"
   ],
+  "stack": "container",
   "env": {
     "URLS_TO_PING": {
       "description": "A list of URLs to ping, delimited by '||'",
